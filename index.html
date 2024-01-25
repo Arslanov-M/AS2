@@ -229,6 +229,29 @@
             showClass: "f-fadeIn",
      });
     </script>
-    
+    <!-- JS-Splide -->
+    <script>
+        var splide = new Splide ('.splide', {
+            type: 'fade',
+            autoplay: true,
+            interwal: 2000,
+            rewind: true,
+            arrows: false,
+            paginationDirection: 'ttb',
+            pagination: true,
+        }); 
+        splide.mount();
+
+        var splide = new Splide('#splide-second', {
+            type: 'loop',
+            interval: 2000,
+            autoplay: true,
+            arrows: false,
+            pagination: true,
+            rewind: true,
+        });
+        splide.mount();
+
+    </script>
 </body>
 </html>
