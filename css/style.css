@@ -56,6 +56,46 @@
     background-color: rgba(0, 0, 0, .4); 
 }
 
+a.hover-1 {
+    position: relative;
+    color: white!important;
+}
+
+a.hover-1:hover {
+    color: red!important;
+}
+
+a.hover-1:hover::before {
+    content: '';
+    position: absolute;
+    animation: hover-1 5s infinite;
+    top: 35px;
+    width: 70px;
+    height: 2px;
+    background-color: red!important;
+    transition: .5s all;
+}
+
+@keyframes hover-1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 70px;
+        height: 2px;
+    }
+    75% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+
+}
+
 /* .bg-shadow {
     background-color: rgba(31, 0, 31, 0.5);
 } */
