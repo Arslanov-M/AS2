@@ -213,6 +213,22 @@
             once: true, 
         });
     </script>
+    <!-- JS-Fancybox -->
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            'animated': true,
+       // Transition effect when changing gallery items
+       Carousel: {
+            transition: "slide",
+       },
+       // Disable image zoom animation on opening and closing
+       Images: {
+            zoom: false,
+       },
+       // Custom CSS transition on opening
+            showClass: "f-fadeIn",
+     });
+    </script>
     
 </body>
 </html>
