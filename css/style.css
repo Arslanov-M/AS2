@@ -82,7 +82,7 @@ a.hover-1:hover::before {
         height: 0;
     }
     50% {
-        width: 70px;
+        width: 105px;
         height: 2px;
     }
     75% {
